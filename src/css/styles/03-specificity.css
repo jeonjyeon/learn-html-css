@@ -1,0 +1,38 @@
+/* 상속 */
+.wrapper {
+  color: green;
+  border: 1px solid red;
+}
+
+#container p {
+  color: teal;
+}
+
+.wrapper p {
+  border: inherit;
+}
+
+/* 겹침
+body {
+  color: red;
+} */
+
+p.ai {
+  color: purple;
+}
+
+.ai {
+  color: purple;
+}
+
+p {
+  color: orange;
+}
+
+p {
+  color: gray;
+}
+
+p {
+  color: pink !important;
+}
