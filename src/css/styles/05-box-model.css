@@ -1,9 +1,13 @@
 /* 박스 모델 */
 /* block box */
 /* border 스타일링 */
+/* padding 여백(안쪽) 스타일링 */
 .lion {
+  box-sizing: border-box;
   background-color: #ffc;
-  border-width: 3px 5px 1px 10px;
+  border: 1px solid #333;
+  padding: 10px;
+  width: 500px;
   span {
     background-color: #fcf;
     display: block;
@@ -21,4 +25,19 @@
 .bootcamp {
   background-color: #cfc;
   display: inline-block;
+}
+
+/* margin 여백(바깥쪽) 스타일링 */
+.school {
+  border: 1px solid orange;
+  margin: 10px;
+}
+
+/* overflow */
+.techit {
+  border: 1px solid green;
+  padding: 10px;
+  margin: 10px;
+  height: 150px;
+  overflow: scroll;
 }
