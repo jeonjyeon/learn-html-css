@@ -1,0 +1,24 @@
+/* 박스 모델 */
+/* block box */
+/* border 스타일링 */
+.lion {
+  background-color: #ffc;
+  border-width: 3px 5px 1px 10px;
+  span {
+    background-color: #fcf;
+    display: block;
+    width: 300;
+  }
+}
+
+/* inline box */
+.like {
+  background-color: #ccc;
+  display: inline;
+}
+
+/* inline-block box */
+.bootcamp {
+  background-color: #cfc;
+  display: inline-block;
+}
