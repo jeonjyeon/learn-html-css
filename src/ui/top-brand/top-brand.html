@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>인기 탑 브랜드 - float</title>
+    <link rel="shortcut icon" href="/public/favicon/likelion.ico" type="image/x-icon" />
+    <link rel="icon" href="/public/favicon/likelion.svg" type="image/svg" />
+    <link rel="preload" as="font" href="/public/font/suit/SUIT-Variable.woff2" />
+    <link rel="stylesheet" href="/public/font/suit/SUIT-Variable.css" />
+    <link rel="stylesheet" href="/src/common/index.css" />
+    <link rel="stylesheet" href="/src/ui/top-brand/top-brand.css" />
+  </head>
+  <body>
+    <a href="/index.html">메인 페이지 이동</a>
+    <br />
+    <h1>인기 탑 브랜드 - float</h1>
+
+    <!-- 상품 아이템 컴포넌트 -->
+    <!-- 내가 짠 코드 -->
+    <!-- <dl>
+      <div>
+        <dt>Top Brand</dt>
+        <dd>인기 탑 브랜드</dd>
+      </div>
+      <a href="https://kream.co.kr/brands/Nike">
+        <dd><img src="/src/assets/kream/top-brand/png/top-brand-product-01.png" alt="" /></dd>
+        <dt>나이키</dt>
+      </a>
+      <a href="https://kream.co.kr/brands/IAB%20Studio">
+        <dd><img src="/src/assets/kream/top-brand/png/top-brand-product-02.png" alt="" /></dd>
+        <dt>아임앱 스튜디오</dt>
+      </a>
+      <a href="https://kream.co.kr/brands/Stussy">
+        <dd><img src="/src/assets/kream/top-brand/png/top-brand-product-03.png" alt="" /></dd>
+        <dt>스투시</dt>
+      </a>
+      <a href="https://kream.co.kr/brands/Chrome%20Hearts">
+        <dd><img src="/src/assets/kream/top-brand/png/top-brand-product-04.png" alt="" /></dd>
+        <dt>크롬하츠</dt>
+      </a>
+      <a href="https://kream.co.kr/brands/Adidas">
+        <dd><img src="/src/assets/kream/top-brand/png/top-brand-product-05.png" alt="" /></dd>
+        <dt>아디다스</dt>
+      </a>
+      <a href="https://kream.co.kr/brands/carhartt%20wip">
+        <dd><img src="/src/assets/kream/top-brand/png/top-brand-product-06.png" alt="" /></dd>
+        <dt>칼하트 WIP</dt>
+      </a>
+      <a href="https://kream.co.kr/brands/bape">
+        <dd><img src="/src/assets/kream/top-brand/png/top-brand-product-07.png" alt="" /></dd>
+        <dt>베이프</dt>
+      </a>
+      <a href="https://kream.co.kr/brands/needles">
+        <dd><img src="/src/assets/kream/top-brand/png/top-brand-product-08.png" alt="" /></dd>
+        <dt>니들스</dt>
+      </a>
+      <a href="https://kream.co.kr/brands/kapital">
+        <dd><img src="/src/assets/kream/top-brand/png/top-brand-product-09.png" alt="" /></dd>
+        <dt>캐피탈</dt>
+      </a>
+      <a href="https://kream.co.kr/brands/human%20made">
+        <dd><img src="/src/assets/kream/top-brand/png/top-brand-product-10.png" alt="" /></dd>
+        <dt>휴먼 메이드</dt>
+      </a>
+    </dl> -->
+    <!-- 강사님이 짠 코드 -->
+    <figure class="top-brand-item">
+      <div>
+        <picture>
+          <source srcset="/src/assets/kream/top-brand/webp/top-brand-product-01.webp" type="image/webp" />
+          <img src="/src/assets/kream/top-brand/png/top-brand-product-01.png" alt="" />
+        </picture>
+      </div>
+      <figcaption><a href="/">나이키</a></figcaption>
+    </figure>
+    <hr />
+    <!-- 상품 리스트 섹션 -->
+    <div class="top-brand-section">
+      <h2><span lang="en">Top Brand</span><br /><span lang="ko-KR">인기 탑 브랜드</span></h2>
+      <ul>
+        <li>
+          <figure class="top-brand-item">
+            <div>
+              <picture>
+                <source srcset="/src/assets/kream/top-brand/webp/top-brand-product-01.webp" type="image/webp" />
+                <img src="/src/assets/kream/top-brand/png/top-brand-product-01.png" alt="" />
+              </picture>
+            </div>
+            <figcaption><a href="https://kream.co.kr/brands/Nike">나이키</a></figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="top-brand-item">
+            <div>
+              <picture>
+                <source srcset="/src/assets/kream/top-brand/webp/top-brand-product-02.webp" type="image/webp" />
+                <img src="/src/assets/kream/top-brand/png/top-brand-product-02.png" alt="" />
+              </picture>
+            </div>
+            <figcaption><a href="/">아임앱 스튜디오</a></figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="top-brand-item">
+            <div>
+              <picture>
+                <source srcset="/src/assets/kream/top-brand/webp/top-brand-product-03.webp" type="image/webp" />
+                <img src="/src/assets/kream/top-brand/png/top-brand-product-03.png" alt="" />
+              </picture>
+            </div>
+            <figcaption><a href="https://kream.co.kr/brands/Stussy">스투시</a></figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="top-brand-item">
+            <div>
+              <picture>
+                <source srcset="/src/assets/kream/top-brand/webp/top-brand-product-04.webp" type="image/webp" />
+                <img src="/src/assets/kream/top-brand/png/top-brand-product-04.png" alt="" />
+              </picture>
+            </div>
+            <figcaption><a href="https://kream.co.kr/brands/Chrome%20Hearts">크롬하츠</a></figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="top-brand-item">
+            <div>
+              <picture>
+                <source srcset="/src/assets/kream/top-brand/webp/top-brand-product-05.webp" type="image/webp" />
+                <img src="/src/assets/kream/top-brand/png/top-brand-product-05.png" alt="" />
+              </picture>
+            </div>
+            <figcaption><a href="https://kream.co.kr/brands/Adidas">아디다스</a></figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="top-brand-item">
+            <div>
+              <picture>
+                <source srcset="/src/assets/kream/top-brand/webp/top-brand-product-06.webp" type="image/webp" />
+                <img src="/src/assets/kream/top-brand/png/top-brand-product-06.png" alt="" />
+              </picture>
+            </div>
+            <figcaption><a href="https://kream.co.kr/brands/carhartt%20wip">칼하트 WIP</a></figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="top-brand-item">
+            <div>
+              <picture>
+                <source srcset="/src/assets/kream/top-brand/webp/top-brand-product-07.webp" type="image/webp" />
+                <img src="/src/assets/kream/top-brand/png/top-brand-product-07.png" alt="" />
+              </picture>
+            </div>
+            <figcaption><a href="https://kream.co.kr/brands/bape">베이프</a></figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="top-brand-item">
+            <div>
+              <picture>
+                <source srcset="/src/assets/kream/top-brand/webp/top-brand-product-08.webp" type="image/webp" />
+                <img src="/src/assets/kream/top-brand/png/top-brand-product-08.png" alt="" />
+              </picture>
+            </div>
+            <figcaption><a href="https://kream.co.kr/brands/needles">니들스</a></figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="top-brand-item">
+            <div>
+              <picture>
+                <source srcset="/src/assets/kream/top-brand/webp/top-brand-product-09.webp" type="image/webp" />
+                <img src="/src/assets/kream/top-brand/png/top-brand-product-09.png" alt="" />
+              </picture>
+            </div>
+            <figcaption><a href="https://kream.co.kr/brands/kapital">캐피탈</a></figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="top-brand-item">
+            <div>
+              <picture>
+                <source srcset="/src/assets/kream/top-brand/webp/top-brand-product-10.webp" type="image/webp" />
+                <img src="/src/assets/kream/top-brand/png/top-brand-product-10.png" alt="" />
+              </picture>
+            </div>
+            <figcaption><a href="https://kream.co.kr/brands/human%20made">휴먼 메이드</a></figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
