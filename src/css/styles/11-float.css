@@ -1,0 +1,25 @@
+.bootcamp {
+  display: flow-root;
+  border: 1px solid red;
+
+  img {
+    width: 150px;
+    border: 1px solid green;
+  }
+
+  .tree {
+    float: right;
+  }
+
+  .rabbit {
+    float: left;
+  }
+
+  p {
+    background: #ffc;
+  }
+
+  .lion {
+    /* clear: both; */
+  }
+}
