@@ -1,0 +1,39 @@
+/* p.lion:nth-of-type(2) {
+  border: 1px solid red;
+  background-color: rgb(255 255 80 /0.5);
+  position: relative;
+  top: 100px;
+  left: 50px;
+} */
+
+.like {
+  background-color: #000;
+  padding: 10px;
+
+  p {
+    border: 1px solid red;
+    background-color: rgb(255 255 80 /1);
+    position: relative;
+  }
+}
+
+/* fixed 값 */
+h1 {
+  background-color: pink;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+/* absolute 값 */
+.bootcamp {
+  border: 1px solid blue;
+  position: relative;
+  span {
+    background-color: rgb(100 80 255 /0.5);
+    border: 1px solid black;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+  }
+}
