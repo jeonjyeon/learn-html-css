@@ -63,6 +63,7 @@ body {
 
 .avatars-list {
   border: 1px solid var(--gray);
+  padding: 26px 40px;
 
   ul {
     width: 380px;
