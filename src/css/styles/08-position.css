@@ -37,3 +37,10 @@ h1 {
     left: 0px;
   }
 }
+
+/* sticky 값 */
+.frontend {
+  background: var(--mint);
+  position: sticky;
+  top: 0;
+}
