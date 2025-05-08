@@ -1,0 +1,88 @@
+body {
+  margin: 50px;
+  background-color: #f6f7f7;
+}
+
+.notification {
+  display: flow-root;
+  background-color: #fff;
+  border-radius: 8px;
+  width: 332px;
+  /* height: 84px; */
+  padding: 20px;
+  margin: 10px;
+  /* shadow/200 */
+  box-shadow: 0px 0px 2px 0px rgba(114, 119, 124, 0.2);
+
+  img {
+    margin-top: 8px;
+    margin-right: 20px;
+  }
+
+  .plants {
+    position: relative;
+
+    div {
+      float: left;
+    }
+
+    dt {
+      color: #22be61;
+      font-weight: 700;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin-bottom: 4px;
+    }
+
+    dd {
+      color: #9b9a90;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    p {
+      color: #22be61;
+      font-weight: 700;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+  }
+
+  .meals {
+    position: relative;
+    div {
+      float: left;
+    }
+
+    dt {
+      color: #e39042;
+      font-weight: 700;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin-bottom: 4px;
+    }
+
+    dd {
+      color: #9b9a90;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    p {
+      color: #e39042;
+      font-weight: 700;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+  }
+}
