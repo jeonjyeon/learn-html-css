@@ -1,0 +1,165 @@
+:root {
+  --black: #121212;
+  --white: #fff;
+  --gray-100: #eeeeee;
+  --gray-300: #b3b3b3;
+  --gray-700: #4d4d4d;
+
+  --font-18: 1.125rem;
+  --font-20: 1.25rem;
+  --font-24: 1.5rem;
+
+  --space-5: 0.3125rem;
+  --space-8: 0.5rem;
+  --space-10: 0.625rem;
+  --space-12: 0.75rem;
+  --space-20: 1.25rem;
+  --space-24: 1.5rem;
+  --space-30: 1.875rem;
+  --space-40: 2.5rem;
+  --space-50: 3.125rem;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  --base-font-color: var(--gray-700);
+
+  background: var(--white);
+  color: var(--base-font-color);
+
+  font-family: 'Pretendard', sans-serif;
+}
+
+.cart {
+  --border-color: var(--gray-700);
+
+  border-radius: 8px;
+  border: 6px solid var(--border-color);
+  background: var(--white);
+
+  width: 712px;
+  height: fit-content;
+
+  margin: auto;
+  margin-block: var(--space-40);
+  padding: var(--space-20);
+}
+
+.title {
+  padding: var(--space-12);
+
+  svg {
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin-right: var(--space-12);
+  }
+  p {
+    display: inline;
+    font-size: var(--font-24);
+    font-weight: 700;
+  }
+}
+
+.items {
+  --border-color: var(--gray-700);
+
+  border-block: 1px solid var(--border-color);
+
+  width: 100%;
+  height: fit-content;
+
+  padding-block: var(--space-20);
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.item {
+  height: 75px;
+  padding: var(--space-5);
+  position: relative;
+}
+
+.img-wrapper {
+  float: left;
+  width: 65px;
+  height: 65px;
+  margin-inline-end: var(--space-12);
+
+  background-repeat: none;
+  background-position: 50% 50%;
+  background-size: 100%;
+  border-radius: 50%;
+}
+
+.first .img-wrapper {
+  background-image: url(../../assets/food/milk.webp);
+}
+
+.second .img-wrapper {
+  background-image: url(../../assets/food/cake.webp);
+}
+
+.third .img-wrapper {
+  background-image: url(../../assets/food/egg.webp);
+}
+
+.item-info {
+  margin-block: calc((65px - 46px) / 2);
+}
+
+.item-name {
+  font-size: var(--font-20);
+  line-height: 100%;
+  margin-block-end: var(--space-8);
+}
+
+.price {
+  font-size: var(--font-18);
+  font-weight: 800;
+  line-height: 100%;
+  margin-inline-end: var(--space-5);
+}
+
+.total-price {
+  width: 100%;
+  margin-block-start: var(--space-20);
+
+  font-size: var(--font-20);
+  font-weight: 700;
+  line-height: 100%;
+  text-align: right;
+}
+
+form {
+  position: absolute;
+  top: 23.5px;
+  right: 0;
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 28px;
+}
+
+input {
+  width: var(--space-30);
+  text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
