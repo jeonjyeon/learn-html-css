@@ -1,0 +1,79 @@
+:root {
+  --green-300: #22be61;
+  --gray-200: #9b9a90;
+  --orange-200: #e39042;
+
+  --size-11: 0.6875rem;
+  --size-14: 0.875rem;
+  --size-18: 1.125rem;
+}
+
+body {
+  margin: 50px;
+  background-color: #f6f7f7;
+}
+
+.notification-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 12px;
+}
+
+.notification {
+  background: var(--white);
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  border-radius: 0.5rem;
+  column-gap: 20px;
+  padding: 20px;
+
+  inline-size: 100%;
+  block-size: 84px;
+  min-width: 245px;
+
+  svg {
+    flex-shrink: 0;
+  }
+
+  > div {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+    row-gap: 0.25rem;
+
+    strong {
+      font-weight: 600;
+      font-size: var(--size-18);
+    }
+
+    time {
+      font-size: var(--size-11);
+      font-weight: 700;
+    }
+
+    .description {
+      --text-color: var(--gray-200);
+
+      inline-size: 100%;
+      font-weight: 400;
+      font-size: var(--size-14);
+      color: var(--text-color);
+    }
+
+    .pot {
+      --text-color: var(--green-300);
+
+      color: var(--text-color);
+    }
+
+    .meal {
+      --text-color: var(--orange-200);
+
+      color: var(--text-color);
+    }
+  }
+}
