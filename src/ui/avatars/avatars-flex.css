@@ -1,0 +1,52 @@
+/* 아바타 - 상태 디자인 */
+body {
+  margin: 50px;
+}
+
+/* 인터렉션이 있는 아바타 */
+.avatar-button {
+  --size: 80px;
+
+  border: 0;
+  padding: 0;
+  background: transparent;
+  width: var(--size);
+  position: relative;
+
+  img {
+    border-radius: 50%;
+  }
+  &::after {
+    content: '';
+    width: 25%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--gray);
+    border: 2px solid var(--white);
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &.is-active::after {
+    background-color: #4cfe88;
+  }
+}
+
+.avatars-list {
+  background: var(--gray);
+  min-inline-size: 420px;
+
+  > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    padding: 1.25rem;
+    gap: 1.25rem;
+  }
+}
