@@ -36,7 +36,7 @@ body {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  column-gap: 0.75rem;
+  /* column-gap: 0.75rem; */
 
   label {
     flex-shrink: 0;
@@ -47,7 +47,6 @@ body {
     flex-grow: 1;
     border: 1px solid #aaa;
     block-size: 32px;
-    padding-inline: 0.5em;
     border-radius: 8px;
 
     &[readonly] {
@@ -91,4 +90,100 @@ button:disabled {
   }
 }
 
+/* 버튼 스타일링 (원형 그라디언트 버튼) */
+.circle-button {
+  --start-color: #1bf008;
+  --end-color: #03cca8;
+  --size: 1.5rem;
+
+  border: 0;
+  padding: 0;
+  border-radius: 50%;
+  inline-size: var(--size);
+  aspect-ratio: 1/1;
+
+  background: linear-gradient(146deg, var(--start-color) 7.5%, var(--end-color) 94.17%);
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  &::after {
+    content: '';
+    inline-size: 35%;
+    block-size: 35%;
+    border-radius: 50%;
+    background: white;
+  }
+}
+
 /* 검색 바 (폼 스타일링) */
+.search-bar {
+  --border-color: #03cc5c;
+
+  border: 1px solid var(--border-color);
+  border-radius: 50px;
+  padding: 12px 12px 12px 20px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  column-gap: 0.75rem;
+
+  min-width: 234px;
+
+  a,
+  button {
+    flex-shrink: 0;
+  }
+
+  /*svg 파일 높이 문제(인라인 요소이기 때문에 발생) 해결 위해 가장 심플한 방법*/
+  svg {
+    display: block;
+  }
+
+  figure {
+    /* height: 24px; 유연하지 않은 방법
+    display: block; 얘는 해결 못함 */
+
+    /*이 코드로도 svg 파일 높이 문제 해결 가능*/
+    display: flex;
+    align-items: center;
+  }
+
+  /* &:has(input:user-valid) {
+    box-shadow: 0 5px 5px 1px #bcc3c7;
+  } */
+
+  &:focus-within {
+    box-shadow: 0 5px 5px 1px #bcc3c7;
+  }
+
+  form {
+    display: contents;
+    /* column-gap: 1rem; */
+
+    /* align-items: center; */
+
+    .form-input {
+      flex-grow: 1;
+      min-inline-size: 0;
+
+      input {
+        border: 0;
+        outline: 0;
+        inline-size:;
+        block-size: 18.2px;
+        appearance: none;
+        padding: 0;
+      }
+    }
+
+    .circle-button {
+      inline-size: 24px;
+      block-size: 24px;
+    }
+  }
+}
