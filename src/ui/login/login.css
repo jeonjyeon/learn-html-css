@@ -383,4 +383,9 @@
     outline-offset: 2px;
     border-radius: 2px;
   }
+
+  .checkbox-wrapper .form-switch input:checked:focus-visible {
+    inline-size: 24px;
+    left: 0.5em;
+  }
 }
