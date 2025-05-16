@@ -1,0 +1,113 @@
+/* 키프레임 애니메이션 */
+body {
+  margin: 50px;
+}
+
+/* 키프레임 규칙 */
+@keyframes zoom {
+  from {
+    width: 100px;
+    background: yellow;
+  }
+
+  100% {
+    width: 200px;
+    background: pink;
+  }
+}
+
+/* 애니메이션 속성 학습을 위한 예제 */
+.like {
+  border: 5px solid currentColor;
+  padding: 10px;
+  width: 100px;
+  /* animation-name: zoom;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  animation-play-state: paused; */
+  animation: zoom 5s 1s 3 alternate ease-in-out forwards paused;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+  grid-auto-rows: 19.75rem;
+  gap: 1rem;
+}
+
+.case {
+  border: 1px solid var(--dark-blue);
+  padding: 0.9375rem;
+}
+
+/* 공통 스타일 (.case) */
+.case .target-animation {
+  border-radius: 0.5rem;
+  padding: 1em;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: var(--dark-blue);
+  color: var(--white);
+  text-align: center;
+  margin-block: 15px;
+}
+
+/* Fade 애니메이션 */
+.fade .target-animation {
+  animation: fade 3s infinite linear;
+  animation-play-state: paused;
+}
+
+/* Shrink 애니메이션 */
+.shrink .target-animation {
+  animation: shrink 2s infinite ease-in-out;
+  animation-play-state: paused;
+}
+
+/* Bounce 애니메이션 */
+.bounce .target-animation {
+  animation: bounce 2s infinite ease-in-out alternate;
+  animation-play-state: paused;
+}
+
+/* Shake 애니메이션 */
+.shake .target-animation {
+  animation: shake 2s infinite ease-in-out alternate;
+  animation-play-state: paused;
+}
+
+.spin .target-animation {
+  width: 120px;
+  aspect-ratio: 1;
+  background: conic-gradient(red 0% 25%, green 25% 50%, blue 50% 75%, pink 75% 100%);
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+  animation-play-state: paused;
+}
+
+/* Pulse 애니메이션 */
+.pulse .target-animation {
+  animation: pulse 1s infinite ease-in-out alternate;
+  animation-play-state: paused;
+}
+
+/* Flip 애니메이션 */
+.flip {
+  perspective: 500px;
+  perspective-origin: 100% 100%;
+
+  .target-animation {
+    animation: flip 1s infinite ease-in-out;
+    animation-play-state: paused;
+  }
+}
+
+/* Wobble 애니메이션 */
+.wobble .target-animation {
+  animation: wobble 1s infinite ease-in-out;
+  animation-play-state: paused;
+}
