@@ -1,0 +1,66 @@
+/* 서브그리드 */
+.bootcamp {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  gap: 10px;
+
+  .like {
+    border: 2px solid darkgray;
+    padding: 1em;
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 4;
+    row-gap: 10px;
+
+    img {
+      inline-size: 100%;
+      aspect-ratio: 3/2;
+      object-fit: cover;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      order: -1;
+    }
+
+    p {
+      color: gray;
+    }
+
+    a {
+      display: block;
+      padding: 0.5em 1em;
+      background: darkblue;
+      color: white;
+    }
+  }
+}
+
+/* 레이아웃 */
+.layout {
+  display: grid;
+  grid-template-columns: [full-start] minmax(1rem, 1fr) [content-start] repeat(12, minmax(5.3125rem, 1fr)) [content-end] minmax(1rem, 1fr) [full-end];
+  grid-auto-rows: 50px;
+
+  .header {
+    background-color: var(--aqua);
+    grid-column: 3 / span 5;
+  }
+  .navigation {
+    background-color: var(--pink);
+    grid-column: full-start / full-end;
+  }
+  .main {
+    background-color: var(--green);
+    grid-column: content;
+  }
+  .aside {
+    background-color: var(--yellow);
+    grid-column: 10 / full-end;
+  }
+  .footer {
+    background-color: var(--orange);
+    grid-column: content-start/full-end;
+  }
+}
