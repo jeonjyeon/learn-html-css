@@ -42,3 +42,47 @@ body {
     }
   }
 }
+
+.card-wrapper {
+  container-type: inline-size;
+  .card {
+    background-color: #efefef;
+    border: 1px solid gray;
+    padding: 15px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+
+    @container (width>=480px) {
+      flex-direction: row;
+    }
+
+    img {
+      inline-size: 100%;
+      aspect-ratio: 3/2;
+      object-fit: cover;
+    }
+
+    figcaption {
+      text-align: center;
+      font-style: italic;
+      font-weight: 500;
+    }
+
+    p {
+      color: darkgray;
+      text-align: justify;
+    }
+  }
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.625rem;
+
+  .card-wrapper:nth-child(n + 5) {
+    grid-column: span 2;
+  }
+}
