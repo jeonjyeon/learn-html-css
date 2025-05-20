@@ -1,0 +1,48 @@
+body {
+  margin: 50px;
+}
+
+.combo-box {
+  background-color: transparent;
+  display: inline-grid;
+  grid-template-columns: auto;
+  row-gap: 0.5rem;
+  padding: 12px 10px;
+  border: 1px solid #757575;
+  border-radius: 5px;
+
+  &:focus-within {
+    box-shadow: 0 0 0 3px #2ede75;
+  }
+
+  .global,
+  .arrow {
+    pointer-events: none;
+  }
+
+  .global,
+  .form-combo,
+  .arrow {
+    grid-area: 1/1/2/2;
+    align-self: center;
+  }
+
+  .global {
+    justify-self: start;
+  }
+
+  .form-combo {
+    select {
+      text-align: center;
+      appearance: none;
+      outline: 0 none;
+      border: 0;
+      background-color: transparent;
+      padding-inline: 1.25rem;
+    }
+  }
+
+  .arrow {
+    justify-self: end;
+  }
+}
