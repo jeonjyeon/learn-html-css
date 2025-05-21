@@ -1,0 +1,40 @@
+@layer module, state;
+
+@layer module {
+  body {
+    background: yellow;
+  }
+
+  .alert {
+    background-color: yellow;
+    padding: 1em;
+    color: white;
+  }
+  p {
+    border: medium solid plum;
+  }
+}
+
+@layer state {
+  body {
+    background-color: pink !important;
+  }
+
+  .alert {
+    background-color: brown;
+    padding: 1em;
+    color: white;
+  }
+  p {
+    border: medium solid limegreen;
+  }
+}
+
+body {
+  margin: 50px;
+  background: gray;
+}
+
+h1 {
+  margin-block: 1.25rem;
+}
